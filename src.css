@@ -1,0 +1,253 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    overflow-x: hidden;
+    width: 100%;
+    font-family: arial,sans-serif;
+    background-color: rgb(93, 80, 80);
+    scroll-behavior: smooth;
+   
+}
+.container{
+    padding: 3rem;
+    margin: 20px 20px;
+    text-transform: capitalize;
+}
+.background{
+    height: 100%;
+    width: 100%;
+    background-image: url(/Image/Picsart_25-06-16_22-51-00-077.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    transform: perspective(100000000000px);
+    position: relative;
+    overflow-x: hidden;
+    
+}
+.background::-webkit-scrollbar{
+    display: none;
+}
+
+.overlay{
+    position: relative;
+    top: 0;
+    left: 0;
+    min-height:200vh;
+    width: 100%;
+   
+    background: rgba(0,0,0,0.6);
+    z-index: 2;
+}
+
+
+header{
+    padding: 3rem;
+    margin-left: 50px;
+    position: relative;
+    bottom: 40px;
+}
+.login-box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(0,0,0,0.75);
+    border-radius: 20px;
+    height: 530px;
+    width: 400px;
+}
+.login-box h2{
+    color: whitesmoke;
+    font-family: "Rubik", sans-serif;
+    font-size: 2rem;
+    position: absolute;
+    left: 50px;
+    top: 40px;
+    letter-spacing: 1.5px;
+}
+
+.login-box input,button{
+    padding: 10px;
+    position: relative;
+    right: 18px;
+    top: 20px;
+    display: block;
+    width: 115%;
+    margin: 10px 0;
+     cursor: pointer;
+}
+
+.login-box input{
+    background-color: rgba(255,255,255,0.09);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.login-box input:focus{
+    color: whitesmoke;
+   
+}
+
+::-webkit-input-placeholder{
+    color: #e0d3d3;
+}
+.btn-1{
+    background-color: rgb(255, 46, 46);
+    color: whitesmoke;
+    font-size: 1.1rem;
+    font-family: "rubik", sans-serif,impact;
+    font-weight: 600;
+    perspective: 1px;
+    border: 1px solid red;
+     cursor: pointer;
+}
+.login-box p{
+    text-align: center;
+    color: whitesmoke;
+    position: relative;
+    top: 20px;
+     font-family: "Inter", sans-serif;
+}
+
+.btn-2{
+      background-color: rgb(255, 46, 46);
+    color: whitesmoke;
+    font-size: 1.1rem;
+    font-family: "rubik", sans-serif,impact;
+    font-weight: 600;
+    perspective: 1px;
+    background: rgba(255,255,255,0.20);
+    border: 1px solid rgba(255,255,255,0.20);
+     cursor: pointer;
+}
+.login-box p a{
+    color: white;
+    position: relative;
+    top: 5px;
+     font-family: "Space Grotesk", sans-serif;
+}
+label{
+    position: relative;
+    right: 140px;
+    top: 35px;
+     cursor: pointer;
+}
+
+
+label .p{
+    color: #ffffff;
+    position: relative;
+    left: 135px;
+    bottom: -6px;
+}
+label #ch{
+    display: none;
+}
+label .custom-checkbox{
+   border: 1px solid white;
+   height: 20px;
+   width: 20px;
+    background: whitesmoke;
+    color: #e0d3d3;
+    position: relative;
+    left: 128px;
+    top: 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+label #ch:checked + .custom-checkbox{
+    background: rgb(255, 255, 255);
+   
+}
+label #ch:checked + .custom-checkbox::after{
+    content: "✓";
+    position: absolute;
+    left: 3px;
+    bottom: 0px;
+    font-weight: 900;
+    color: black;
+}
+
+
+.login-box .p-1{
+    text-align: left;
+    position: relative;
+    top: 50px;
+    right: 12px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.login-box .p-1 .gray{
+    color: rgb(156, 152, 152);
+}
+.login-box .p-2{
+   position: relative;
+   top: 70px;
+   right: 10px;
+   padding:0 rem;
+   font-size:12px;
+   text-align: justify;
+   width: 280px;
+   color: silver;
+    font-family: "Rubik", sans-serif;
+   
+}
+
+.login-box .learn{
+    position: relative;
+    top:85px;
+    right: 10px;
+}
+footer{
+    background-color: rgb(41, 39, 39);
+    height: 253px;
+    position: absolute;
+    top: 60rem;
+    
+    color: whitesmoke;
+    width: 100%;
+    
+    
+}
+.br{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+.br a{
+    color: whitesmoke;
+}
+.box{
+     display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    position: relative;
+    left: 400px;
+    bottom: 40px;
+}
+.box a {
+    color: whitesmoke;
+}
+.box-1{
+    display: flex;
+   gap: 4rem;
+   position: relative;
+   left: 70%;
+   bottom: 70px;
+}
+.box-1 a{
+    color: whitesmoke;
+}
+
